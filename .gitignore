@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Env config
+.strapi.env
+
+# Media temp files
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# OS files
+.DS_Store
+Thumbs.db

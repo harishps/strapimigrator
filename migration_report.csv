@@ -1,0 +1,21 @@
+entry,action,timestamp,error,dry_run
+Inaugural Session,failed,2025-07-25T03:12:56.169574+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/623,False
+Address,failed,2025-07-25T03:12:56.518259+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/625,False
+Keynote,failed,2025-07-25T03:12:56.771283+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/627,False
+Keynote & Fireside Chat,created,2025-07-25T03:12:57.063302+00:00,,False
+Special Session,failed,2025-07-25T03:12:57.459879+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/631,False
+Fireside Chat,failed,2025-07-25T03:12:57.727251+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/633,False
+Trialogue,failed,2025-07-25T03:12:58.086942+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/635,False
+Valedictory Address,failed,2025-07-25T03:12:58.359579+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/637,False
+Panel Discussion,failed,2025-07-25T03:12:58.611207+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/685,False
+Awards,failed,2025-07-25T03:12:58.850704+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/641,False
+Panel Discussion and Report Launch,failed,2025-07-25T03:12:59.135829+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/643,False
+Masterclass,failed,2025-07-25T03:12:59.439936+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/645,False
+Networking,failed,2025-07-25T03:12:59.752914+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/647,False
+Product Showcase,failed,2025-07-25T03:13:00.078053+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/649,False
+Product Launch,failed,2025-07-25T03:13:00.340841+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/651,False
+Round Table,failed,2025-07-25T03:13:00.699750+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/699,False
+Special Session,failed,2025-07-25T03:13:00.982989+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/631,False
+Workshop,failed,2025-07-25T03:13:01.239953+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/703,False
+Presentation,failed,2025-07-25T03:13:01.487293+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/705,False
+Inaugural Session,failed,2025-07-25T03:13:01.755632+00:00,404 Client Error: Not Found for url: https://blessed-event-d36671ed20.strapiapp.com/api/agenda-formats/623,False
