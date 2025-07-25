@@ -75,10 +75,9 @@ def find_existing_entry(collection, match_field, match_value):
     res.raise_for_status()
     data = res.json().get("data", [])
     print(f"🔍 Existing entry data: {data}")
-    # Correctly extract the nested id from data[0]["id"] if present
-    if data and isinstance(data[0], dict) and "id" in data[0]:
+    # Only return documentId (do not use outer id for update)
+    if data and isinstance(data[0], dict):
         return {
-            "id": data[0]["id"],
             "documentId": data[0].get("attributes", {}).get("documentId")
         }
     return None
@@ -94,16 +93,14 @@ def migrate_collection(collection, match_field, dry_run=False):
         payload = sanitize_payload(entry)
         post_payload = {"data": payload}
         existing_entry = find_existing_entry(collection, match_field, match_value)
-        existing_id = existing_entry["id"] if existing_entry else None
-        existing_doc_id = existing_entry.get("documentId") if existing_entry else None
+        update_doc_id = existing_entry.get("documentId") if existing_entry else None
 
         try:
             if existing_entry:
-                update_id = existing_doc_id or existing_id
                 print(f"♻️ Updating existing entry: {match_value}")
                 print(f"   🧪 Dry run: {dry_run}")
                 if not dry_run:
-                    url = f"{DEST_API}/api/{collection}/{update_id}"
+                    url = f"{DEST_API}/api/{collection}/{update_doc_id}"
                     res = requests.put(url, headers=HEADERS_DEST, json=post_payload)
                     if res.status_code >= 400:
                         print(f"❌ Update error {res.status_code} – {res.text}")
@@ -129,7 +126,7 @@ def migrate_collection(collection, match_field, dry_run=False):
                 "dry_run": dry_run
             })
         except Exception as e:
-            print(f"❌ Failed to {('update' if existing_id else 'create')}: {entry.get(match_field)} – {e}")
+            print(f"❌ Failed to {('update' if update_doc_id else 'create')}: {entry.get(match_field)} – {e}")
             report_rows.append({
                 "entry": entry.get(match_field),
                 "action": "failed",
